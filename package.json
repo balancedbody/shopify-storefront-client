@@ -1,8 +1,8 @@
 {
-  "name": "shopify-storefront-client",
+  "name": "@balancedbody/shopify-storefront-client",
   "version": "1.0.4",
   "type": "module",
-  "description": "A customizable module to interact with Shopify's Storefront API.",
+  "description": "A customizable module to interact with Shopify's Storefront API, modified for use by Balanced Body",
   "main": "index.js",
   "scripts": {
     "test": "node ./tests/index.js",
