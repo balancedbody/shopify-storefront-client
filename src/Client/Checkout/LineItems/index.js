@@ -83,7 +83,7 @@ class LineItems {
     };
 
     return this.send({ query, variables })
-      .then((responseJson) => responseJson.checkoutLineItemsUpdate.checkout)
+      .then((responseJson) => responseJson.checkoutLineItemsReplace.checkout)
       .then(formatCheckoutResponse);
   }
 
@@ -111,8 +111,8 @@ class LineItems {
 
     return this.send({ query, variables })
       .then((responseJson) => ({
-        ...responseJson.checkoutLineItemsReplace.checkout,
-        userErrors: responseJson.checkoutLineItemsReplace.userErrors,
+        ...responseJson.checkoutLineItemsUpdate.checkout,
+        userErrors: responseJson.checkoutLineItemsUpdate.userErrors,
       }))
       .then(formatCheckoutResponse);
   }
